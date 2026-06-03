@@ -8,7 +8,7 @@
     <title>Ojele Samuel | AI Engineer & Full‑Stack Developer</title>
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
-	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+	<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
 <link rel='preconnect' href='https://fonts.gstatic.com/' crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
 <script>
@@ -50,7 +50,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='aos-css' href='wp-content/themes/gridx/assets/css/aosa784.css?ver=6.8.5' media='all' />
 <link rel='stylesheet' id='gridx-style-css' href='wp-content/themes/gridx/assets/css/stylea784.css?ver=6.8.5' media='all' />
 <link rel='stylesheet' id='gridx-unit-test-css' href='wp-content/themes/gridx/assets/css/gridx-unit-testa784.css?ver=6.8.5' media='all' />
-<link rel='stylesheet' id='gridx-fonts-css' href='http://fonts.googleapis.com/css?family=Inter%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C%26subset%3Dlatin%2Clatin-ext&amp;ver=1.0.0' media=[...]
+<link rel='stylesheet' id='gridx-fonts-css' href='https://fonts.googleapis.com/css?family=Inter%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C%26subset%3Dlatin%2Clatin-ext&amp;ver=1.0.0' media=[...]
 <link rel='stylesheet' id='elementor-icons-css' href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min2778.css?ver=5.43.0' media='all' />
 <link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend.min242d.css?ver=3.31.2' media='all' />
 <link rel='stylesheet' id='elementor-post-16-css' href='wp-content/uploads/elementor/css/post-16bdd6.css?ver=1773219138' media='all' />
@@ -133,6 +133,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
     <div class="black_wall"></div>
     <div class="loader"></div>
 </div>
+<script>
+    // Fallback: force-remove preloader after 3s in case window.onload is blocked
+    setTimeout(function() {
+        var p = document.getElementById("preloader");
+        if (p) p.classList.add("off");
+    }, 3000);
+</script>
 	
 <main class="main-homepage">
 
