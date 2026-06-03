@@ -20,5 +20,11 @@
 
 // Remove preloader once the page is fully loaded
     window.onload = function() {
-        document.getElementById("preloader").classList.add("off");
+        var preloader = document.getElementById("preloader");
+        if (preloader) preloader.classList.add("off");
     };
+    // Fallback: remove preloader after 3 seconds max in case resources are slow/blocked
+    setTimeout(function() {
+        var preloader = document.getElementById("preloader");
+        if (preloader) preloader.classList.add("off");
+    }, 3000);
