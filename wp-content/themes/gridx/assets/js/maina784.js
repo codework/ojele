@@ -6,10 +6,12 @@
             $(".header-area .navbar").toggleClass('active');
         });
 
-        AOS.init({
-            duration: 1500,
-            once: true,
-        })
+        if (window.AOS) {
+            AOS.init({
+                duration: 1500,
+                once: true,
+            });
+        }
     });
 
 })(jQuery);
